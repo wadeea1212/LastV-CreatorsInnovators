@@ -68,10 +68,10 @@ body {
     height: 62px;
     width: 62px;
     object-fit: contain;
-    background: #ffffff;
-    border-radius: 14px;
+    
+    
     padding: 2px;
-    box-shadow: 0 0 0 1px rgba(255, 184, 41, 0.45), 0 4px 14px rgba(0, 0, 0, 0.45);
+
 }
 
 .nav-logo {
