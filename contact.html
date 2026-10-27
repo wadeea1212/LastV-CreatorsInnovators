@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا | Creators & Innovators</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="tsparticles"></div>
+
+<nav class="navbar">
+    <div class="nav-container">
+
+        <!-- اللوجو على اليمين -->
+        <a href="index.html" class="nav-logo" aria-label="Creators & Innovators - الرئيسية">
+            <img src="Image1.png" alt="شعار Creators & Innovators" class="nav-logo-img">
+            <span class="nav-brand-name">Creators&amp;Innovators</span>
+        </a>
+
+        <!-- الروابط والقوائم المنسدلة -->
+        <ul class="nav-links" id="nav-links-list">
+            <li><a href="index.html">الرئيسية</a></li>
+
+            <li class="dropdown">
+                <a href="#" class="drop-btn">المنتجات ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">المواد الفعالة سطحياً</a></li>
+                    <li><a href="#">المذيبات الكيميائية</a></li>
+                    <li><a href="#">المواد الحافظة والإضافات</a></li>
+                    <li><a href="#">الزيوت والبوليمرات</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="drop-btn">القطاعات ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">صناعة المنظفات</a></li>
+                    <li><a href="#">مستحضرات التجميل</a></li>
+                    <li><a href="#">الدهانات ومواد البناء</a></li>
+                    <li><a href="#">المعالجة المائية</a></li>
+                </ul>
+            </li>
+
+            <li><a href="about.html">عن الشركة</a></li>
+        </ul>
+
+        <!-- الأزرار -->
+        <div class="nav-buttons-group">
+            <a href="contact.html" class="btn-nav outline-btn active">تواصل معنا</a>
+            <a href="consultation.html" class="btn-nav">طلب استشارة</a>
+        </div>
+
+        <!-- زر الموبايل -->
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+    </div>
+</nav>
+
+    <!-- قسم تواصل معنا العام -->
+    <section class="contact-section page-top-space">
+        <div class="section-header">
+            <h2 class="section-title">تواصل معنا لطلب المواد والاتفاقيات<span>.</span></h2>
+            <p class="section-subtitle">أرسل تفاصيل طلبك أو استفسارك وسيقوم فريق المبيعات الفني بالتواصل معك خلال ساعات</p>
+        </div>
+
+        <div class="contact-container">
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('تم إرسال رسالتك بنجاح! سيتواصل معك فريق المبيعات قريباً.');">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="company">اسم الشركة / المصنع</label>
+                        <input type="text" id="company" placeholder="أدخل اسم شركتك أو مصنعك" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني المهني</label>
+                        <input type="email" id="email" placeholder="name@company.com" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="material-type">المادة المطلوبة أو الخدمة</label>
+                        <select id="material-type">
+                            <option value="polymers">المواد البوليمرية والبلاستيك</option>
+                            <option value="solvents">المذيبات والمستحلبات الصناعية</option>
+                            <option value="organic">المركبات العضوية وغير العضوية</option>
+                            <option value="catalysts">الإضافات والمحفزات الكيميائية</option>
+                            <option value="sample">طلب عينة مخبرية (Sample)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">الكمية التقديرية</label>
+                        <input type="text" id="quantity" placeholder="مثال: 500 كغ / طن / عينة تجريبية">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">تفاصيل إضافية أو المواصفات الفنية المطلوبة</label>
+                    <textarea id="message" rows="4" placeholder="اكتب أي متطلبات خاصة بالنقاوة، المواصفات القياسية، أو مواعيد التوريد المستهدفة..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary submit-btn">إرسال طلب التسعيرة</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>© 2026 Creators & Innovators. جميع الحقوق محفوظة لشركة المبدعون والمبتكرون.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
